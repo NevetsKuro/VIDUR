@@ -1,0 +1,99 @@
+$border-color:#9C27B0;
+$primary-color:#e91e63;
+
+.attendance-calendar {
+    background-color: White;
+    border-color: $border-color;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    border-collapse: collapse;
+    
+    .calender-for-month {
+        background-color: #dcdcdc;
+        padding: 11px;
+        text-align: center;
+        font-size: 15px;
+        color: Black;
+    }
+
+    .week-days {
+        color: Black;
+        background-color: #f1f1f1;
+        border: 1px solid $border-color;
+        font-weight: normal;
+        padding: 10px;
+        width: 14%;
+        @media(max-width:640px) {
+            padding: 7px;
+            font-size: 12.5px;
+        }
+    }
+
+    .day {
+        border-width: 1px;
+        border: 1px Solid $border-color;
+        padding: 5px;
+
+        .details {
+            width: 100%;
+
+            .date {
+                font-size: 15px;
+                width: 30%;
+                display: inline-block;
+                @media(max-width:640px) {
+                    font-size: 12.5px;
+                }
+                @media(max-width:440px) {
+                    font-size: 11px;
+                }
+                @media(max-width:360px) {
+                    font-size: 10px;
+                }
+            }
+
+            .tag {
+                color: $primary-color;
+                font-size: 15px;
+                text-align: right;
+                margin-bottom: 7px;
+                display: inline-block;
+                width: 70%;
+                @media(max-width:640px) {
+                    font-size: 12.5px;
+                }
+                @media(max-width:440px) {
+                    font-size: 11px;
+                }
+                @media(max-width:360px) {
+                    font-size: 10px;
+                }
+            }
+
+            .in, .out {
+                color: #7F7975;
+                font-size: 7pt;
+                @media(max-width:640px) {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+
+    .day.holiday {
+        background-color: #f1f1f1;
+    }
+
+    .day.today {
+        color: #ffffff;
+        background: $primary-color;
+
+        .details {
+            .tag, .in, .out {
+                color: #ffffff;
+            }
+        }
+    }
+    
+}

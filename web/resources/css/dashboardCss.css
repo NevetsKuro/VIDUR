@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Aug, 2019, 9:34:56 PM
+    Author     : Nevets
+*/
+#welcomeDiv{
+    font-family: serif;
+    font-style: italic;
+    font-size: 72px;
+    padding: 100px;
+    background: #e6d9df;
+}
+#imageDiv{
+    padding: 0px;
+}
+#imageDiv div{
+    /*background-image: url("https://www.verywellhealth.com/thmb/08K9h-SZ7mVM8BxHr-MTvMZJ438=/3744x3744/smart/filters:no_upscale()/buttonhole-technique-dialysis-5be1be1e46e0fb0026e6f2cf.jpg");*/
+    background-image: url("../images/welcomeRightImage.jpg");
+    background-size: contain;
+    height: -webkit-fill-available;
+    width: 100%;
+}
