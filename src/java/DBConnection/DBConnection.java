@@ -27,9 +27,7 @@ public class DBConnection {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/vidur?useSSL=false&allowPublicKeyRetrieval=true", "root", "Steven@1996");
-//            conn = DriverManager.getConnection(
-//                    "jdbc:mysql://127.0.0.1:3306/VIDUR?useSSL=false&allowPublicKeyRetrieval=true", "root", "Renal@2019");
+                    "jdbc:mysql://localhost:3306/vidur?useSSL=false&allowPublicKeyRetrieval=true", "root", "******");
             isconnected = true;
         } catch (Exception e) {
             System.out.println(e);
